@@ -41,8 +41,7 @@ Assignment                   | Points |   Percent  |
 -----------------------------|--------|------------|
 Research Questions  				 |   15   |		 15.0%   |
 Proposal presentation				 |   15   |		 15.0%	 |
-Progress report			 			   |    5   |		  5.0%	 |
-Progress presentation        |   10   |		 10.0%	 |
+Progress presentation        |   15   |		 15.0%	 |
 Data + ReadMe Guide          |   15   |		 15.0%	 |
 Interview session               |   15   |		 15.0%	 |
 Final presentation           |   15   |		 15.0%	 |
