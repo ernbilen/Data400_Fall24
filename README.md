@@ -4,7 +4,7 @@
 |--------------|--------------------------------------------------------------|
 | Email | [bilene@dickinson.edu](mailto:bilene@dickinson.edu) |
 | Office | Althouse 104 |
-| Office Hours | M 2:30-4p; F 9-10:30a |
+| Office Hours | [calendly](https://calendly.com/bilene/office-meeting) <br> M 2:30-4pm, <br> F 9-10:30am|
 | GitHub | [ernbilen](https://github.com/ernbilen) |
 
 * **Meeting day/time**: T-Th 10:30-11:45a @Althouse 206
