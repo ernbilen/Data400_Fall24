@@ -9,7 +9,8 @@
 
 * **Meeting day/time**: T-Th 10:30-11:45a @Althouse 206
 * Office hours also available by appointment.
-
+* **QRA:** Quang Nguyen [nguyenqm@dickinson.edu](mailto:nguyenqm@dickinson.edu)
+* **QRA Office Hours:** TBA
 
 ## Course description ##
 
