@@ -1,0 +1,181 @@
+---
+title: "DATA 400: Capstone in Data Analytics"
+from: markdown+emoji
+author: "Eren Bilen"
+institute: "Dickinson College"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+format:
+  revealjs:
+    theme: [default,custom.scss]
+    incremental: false
+    logo: "assets/dickinson_logo.jpg"
+    footer: "[github.com/ernbilen/Data400_Spring24](https://github.com/ernbilen/Data400_Spring24)"
+    fontsize: 2em
+    highlight-style: github
+    slide-number: c/t
+    history: false
+    chalkboard: 
+      boardmarker-width: 5
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+#  Are you ready to graduate?
+
+
+::: {.fragment fragment-index=2}
+<iframe src="https://giphy.com/embed/cl27Mh8srUEog5GtUR" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+
+::: {.fragment fragment-index=3 .absolute bottom="-40" right="300"}
+<iframe src="https://giphy.com/embed/9l5gvxWKwweyDOlSaG" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+
+
+# We need to make sure you have a good _package_!
+
+But first, where will you send?
+
+# If you are applying for jobs in industry
+1. Resume
+2. Cover letter (sometimes)
+3. Project samples (e.g., in a Github portfolio)
+
+# If you are applying for jobs in government
+Pretty much the same
+
+1. Resume
+2. Cover letter (sometimes)
+3. Project samples (e.g., in a Github portfolio)
+
+# If you are applying for positions in academia
+
+1. <s>Resume</s> CV
+2. Cover letter <s>(sometimes)</s> Always
+3. Research statement
+4. Project and research samples (e.g., in a Github portfolio, writing sample)
+
+# In all cases
+
+It's important that you pick a domain that interests you.
+
+::: {.fragment .fade-up}
+For example, my domain is in behavioral economics. I enjoy doing research about it, talking to others about it..
+
+Same thing should apply to you e.g., if you want to go for finance.
+:::
+
+# Let's take a look at some job postings?
+
+::: {.fragment .fade-up}
+Look for qualifications required to get an idea of what is required from you.
+
+You can browse `indeed.com`, `twitter`, or straight `google`
+:::
+
+
+# Nice resume suggestions
+
+<https://data36.com/data-science-cv-resume-cover-letter-github/#resume>
+
+::: {.fragment .fade-up}
+- Should be super clean and simple.
+- You can use Word, Latex, Markdown.
+  - I suggest Markdown or Latex, so you get some practice.
+:::
+
+
+# Cover letter
+- Should explain why you are a good fit for the position.
+Try to find 2-3 reasons why in particular you are a good candidate.
+
+::: {.fragment .fade-up}
+- If you are thinking of graduate school: research statement is a similar idea, but from a research point of view, e.g., how your research interests align with the program you want to get into.
+:::
+
+# Github portfolio
+- Your employer will want to see your skills and interests beforehand
+- Projects you show in your personal Github portfolio works great to showcase your skills and interests
+
+::: {.fragment .fade-up}
+  - On another note, you should create your own personal website. Github enables you to do that free of charge (including free hosting) Check out my website: <https://ernbilen.github.io>
+    - Hugo Apero template is amazing (mine is not Apero.. no time!)
+    - Check out Alison Hill's [tutorial](https://www.youtube.com/watch?v=yXFu_upDL2o) on how to build one from scratch
+:::
+
+# Github portfolio
+What kind of projects?
+
+::: {.fragment .fade-up}
+- Needs to be "original".
+  - Don't analyze titanic, iris, cars..
+  - Ideally you would use novel data, e.g., scraped
+:::
+::: {.fragment .fade-up}
+  - You should show exploratory analyses + model(s)
+    - Models, but not just for sake of modeling: should make sense with the purpose of your project
+:::
+::: {.fragment .fade-up}
+  - You can consider building a dashboard showcasing your data.
+    - People (employers) love dashboards.
+    - We will talk more about options for building a dashboard later in the semester.
+:::
+
+# After you apply
+::: {.r-stack}
+::: {.fragment fragment-index=2 .absolute width="300" top="30" left="50"}
+<iframe src="https://giphy.com/embed/rhmyoddHSEceaeCiP4" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+::: {.fragment fragment-index=2 .incremental}
+::: {.column width="80%" .absolute bottom="-538" right="-150" style="font-size: 24px"}
+- Short phone interview with someone from the HR
+- Main interview(s): Usually multiple
+    - 30-60 mins with a manager
+    - Coding interview and/or case studies
+      - This varies A LOT from company to company
+      - You could be given a take-home question (a difficult one) to solve within 24 hours, or you could be asked to solve multiple questions via live coding, talk through your thinking
+    - Potentially an interview with team members to see if you fit well into the team's culture (and the team fits yours!)
+:::
+:::
+:::
+
+# Things you should prepare for
+::: r-stack
+::: incremental
+- the coding interview
+  - Ace The Data Science Interview (ADSI) book
+- any questions you could be asked for about data analysis
+  - Again ADSI, also browse [r/datascience](https://www.reddit.com/r/datascience/) (with a large grain of salt) and [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful)
+- why you applied
+  - how you fit into the company/department's goals
+  - you should do research about the company + department (and yourself!) 
+:::
+:::
+
+# Things you should prepare for
+::: r-stack
+- the coding interview
+  - Ace The Data Science Interview (ADSI) book
+- any questions you could be asked for about data analysis
+  - Again ADSI, also browse [r/datascience](https://www.reddit.com/r/datascience/) (with a large grain of salt) and [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful)
+- why you applied
+  - how you fit into the company/department's goals
+  - you should do research about the company + department (and yourself!) 
+<iframe src="https://giphy.com/embed/H7kfFDvD9HSYGRbvid" style="position:relative; right: -750px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+  
+# Salary 
+- You should always negotiate
+  - You won't lose your offer if you negotiate
+- Research about the average prices based on position, company size, **location**
+  - \$120,000 salary in San Francisco is very different than $120,000 in Harrisburg
+    - Make a guess? <https://www.nerdwallet.com/cost-of-living-calculator/compare/san-francisco-ca-vs-harrisburg-pa>
+- You should aim for at least average salary for the position/experience level
+  - It's good to know this number, in case the hiring manager asks you your salary expectations during interview
+  
+# Questions?

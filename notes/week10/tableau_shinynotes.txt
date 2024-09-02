@@ -1,0 +1,18 @@
+Additions:
+Top 10 for lines and bars, choose from individual filter (don't do this, this filters all permanently, which sucks.)
+Search bar
+ - from individual, left panel, right click -- create parameter, call it search,
+ data type string, current value empty
+ - then right click, create calculated field, call it return_search
+ - inside, enter CONTAINS([colname], [parametername]) so, that would be CONTAINS(LOWER([Country]),LOWER([search])), with LOWER
+ - then drag from left to inside filters for given graph, select true.
+ - then "apply to all worksheets using this data source."
+ - then go to dashboard, on an individual graph, select parameters, choose yours. In this case, search.
+
+
+Shiny:
+Create new shiny.
+Go over geyser data.
+Then publish button top right.
+Create shinyapps account.
+copy to clipboard.

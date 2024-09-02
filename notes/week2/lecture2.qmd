@@ -1,0 +1,218 @@
+---
+title: "DATA 400: Capstone in Data Analytics"
+from: markdown+emoji
+author: "Eren Bilen"
+institute: "Dickinson College"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+format:
+  revealjs:
+    theme: [default,custom.scss]
+    incremental: false
+    logo: "assets/dickinson_logo.jpg"
+    footer: "[github.com/ernbilen/Data400_Spring24](https://github.com/ernbilen/Data400_Spring24)"
+    fontsize: 2em
+    highlight-style: github
+    slide-number: c/t
+    history: false
+    chalkboard: 
+      boardmarker-width: 5
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# How to ask good research questions?
+
+::: {.fragment .fade-up fragment-index="2"}
+Skill that you learn over the years
+:::
+
+::: {.fragment fragment-index="3"}
+-   But we can still work on it/improve it!
+    -   It is perfectly ok to come up with terrible ideas early on.
+:::
+
+::: {.fragment .fade-up}
+(My third year paper! More on that later)
+:::
+
+::: {.fragment .fade-up}
+-   We will learn what makes an idea "good", what makes it "bad".
+    -   Let's make sure we catch "bad" ideas early.
+:::
+
+# There are two types of studies {auto-animate="true"}
+
+Experimental
+
+Observational
+
+
+# There are two types of studies {auto-animate=true}
+
+Experimental
+
+$\hspace{1cm}$ is where you design an experiment (in a lab, or "field")
+
+::: incremental
+- _very_ expensive and intense to conduct.
+- Examples: All STEM labs, Social sciences: psychology, experimental economics labs, field experiments: [One](https://web.stanford.edu/~pdupas/Tracking_rev.pdf), [Two](https://academic.oup.com/qje/article-abstract/120/3/917/1841493), [Three](https://news.uchicago.edu/story/economics-study-finds-volume-discounts-dont-increase-profitability-video-games), A/B testing: [One](https://medium.com/@shabidzh/the-power-of-a-b-testing-the-solution-for-eas-video-game-simcity-5-82ceb418a76d) [Two](https://www.bindwise.com/blog/amazon-ab-testing-guide-examples-best-practices)
+- Nice because you get clean variation.
+:::
+
+\
+
+Observational
+
+# There are two types of studies {auto-animate=true auto-animate-easing="ease-out"}
+
+Experimental
+
+Observational
+
+::: {.fragment fragment-index=2}
+$\hspace{1cm}$ is where you work with data that is observed from the "world"
+:::
+
+::: incremental
+- This is 99\% of data science projects
+- You can either collect the data yourself, use already existing datasets, or scrape unique data.
+:::
+
+
+# Where to start?
+::: incremental
+- First, need to find what interests you the most: i.e., your domain area.
+  - Physics, economics, finance, biotech, ...
+
+- Once you know your topic-area, think about potential projects that are
+  1. Feasible to implement
+      - Can you get the data in a reasonable time frame? Or if at all?
+    
+  2. That people would care about your findings, i.e., it improves the existing knowledge, creates a value added...
+:::
+
+# Where to start?
+
+- Data could be a starting point.
+  - If you use existing data, there is a good chance it was analyzed by >500 other researchers
+  - If you scrape the data, it's easier to present new findings
+    - Twitter, yelp... are scraped frequently, so it's difficult to be unique there, but the internet is vast!
+    
+# Good ideas, bad ideas? {auto-animate=true}
+. . .
+
+- Does giving advertisements to instagram influencers help improve sales?
+
+# Good ideas, bad ideas?
+- Does giving <u>advertisements to instagram influencers</u> help improve sales?
+
+::: {.fragment .fade-up}
+  - Need to scrape this.
+    - Is it legal? Good news: <https://techcrunch.com/2022/04/18/web-scraping-legal-court>
+:::
+
+# Good ideas, bad ideas?
+- Does giving advertisements to instagram influencers help improve <u>sales</u>?
+
+::: {.fragment .fade-up}
+  - You need sales data from the companies giving ads.
+  - Might be challenging for smaller companies
+  - How to know? Google search!
+:::
+
+# Good ideas, bad ideas?
+- Does giving advertisements to instagram influencers help improve sales?
+
+::: {.fragment .fade-up}
+  - You can try to simplify the setup by 
+    - finding a company with revenue/market share data first
+    - doing a search with company's name/hashtag on the platform, 
+    - scrape and analyze the frequency of posts, \# of likes... match them with revenue data
+    - fit a simple model checking correlation between "ad influence" and market revenue in each quarter
+:::
+
+# Good ideas, bad ideas?
+- Does giving advertisements to instagram influencers help improve sales?
+
+::: {.fragment .fade-up}
+  - You can imagine doing this for multiple companies to compare \& improve the external validity of your project
+    - External validity means your findings are applicable to other samples/populations.
+    - E.g., you might find that giving \$X tax rebate for installing solar panels in a small town leads to residents installing more of these panels. Would this hold true for other places too? Big cities?
+:::
+
+# Good ideas, bad ideas?
+- You can come up with questions involving Twitter.
+  - E.g., do people respond in certain way when a big news even happens.
+  - Would involve text analysis, e.g., topic modeling, sentiment analysis
+  - Caveat: Twitter API is not free, there are limitations. <https://developer.twitter.com/en/pricing/search-fullarchive>
+  - Makes sense to start with a free account before purchasing a premium account.
+
+# Good ideas, bad ideas?
+- Do restaurants that stay open for longer make more money per hour?
+  - Difficulty: you don't have access to multiple restaurants' revenue data.
+  - This study is not feasible.
+
+# Good ideas, bad ideas?
+- Do restaurants that stay open for longer <u>receive better reviews?</u>
+  - This is doable through scraping Google Reviews or Yelp, but it is a significantly different (less impactful) question.
+
+# Good ideas, bad ideas?
+::: incremental
+- What is the best James Bond movie?
+  - Can't give a conclusive answer because it's subjective.
+  
+- You could change it to: "What is the James Bond movie with the highest box office sales?"
+  - But, a quick Google search gives you the answer.
+  
+- You could try movie-level things: "Does event X happen more in James Bond movies in relative to other movies?"
+  - Potentially very difficult to get this data.
+  - But doable, e.g. [here](https://www.reddit.com/r/dataisbeautiful/comments/idvzzq/oc_how_the_number_of_words_spoken_by_a_character)
+  - You need to make sure your audience would find your results interesting.
+:::
+    
+    
+# couple more points {auto-animate=true}
+How to get better at this?:
+
+# couple more points {auto-animate=true}
+How to get better at this?: 
+
+Practice!!
+
+# couple more points {auto-animate=true}
+How to get better at this?: 
+
+::: {style="margin-right: 200px; font-size: 3em; color: red;"}
+Practice!!
+:::
+
+
+# couple more points {auto-animate=true}
+::: r-stack
+::: {style="margin-right: 200px; font-size: 3em; color: red;"}
+Practice!!
+:::
+
+::: {.fragment fragment-index=1 .absolute bottom="-280" right="80"}
+<iframe src="https://giphy.com/embed/2TVzpBsY4p3z2" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+:::
+::: {.column width="50%" .absolute bottom="-338" right="580"}
+::: {.incremental}
+- **Second point:** How to make sure you are not going for something that has been done >500 times before?
+  - Google search
+  - Academic articles: [Google scholar](https://scholar.google.com)
+  - Data science blogs: [towardsdatascience](https://towardsdatascience.com), [medium](https://medium.com/tag/data-science)
+:::
+:::
+:::
+
+# Good luck!
+
+<iframe src="https://giphy.com/embed/toXKzaJP3WIgM" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+
