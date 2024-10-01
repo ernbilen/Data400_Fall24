@@ -1,0 +1,41 @@
+Uber Inc. Database Schema
+
+Ride
+-----
+Ride_ID
+Rider_ID
+Driver_ID
+Origin
+Destination
+Distance in miles
+Duration
+Status (cancelled, completed)
+Fare (price in $)
+Service (X, XL, comfort, pet, comfort etc.)
+(we can't include since Uber doesn't ask) Number of passengers
+
+Rider
+-----
+Rider_ID
+First Name
+Last Name
+Phone
+Address
+Rating
+Payment Method
+Premium Status
+
+
+Driver
+-----
+Driver_ID
+First Name
+Last Name
+Phone
+Address
+Rating
+Bank Account
+Driver's License
+Insurance
+SSN Number
+Car brand
