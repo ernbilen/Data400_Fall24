@@ -11,6 +11,7 @@
 * Office hours also available by appointment.
 * **QRA:** Quang Nguyen [nguyenqm@dickinson.edu](mailto:nguyenqm@dickinson.edu)
 * **QRA Office Hours:** TBA
+* **Course eval:** [https://dickinson.campuslabs.com/eval-home/](https://dickinson.campuslabs.com/eval-home/)
 
 ## Course description ##
 
